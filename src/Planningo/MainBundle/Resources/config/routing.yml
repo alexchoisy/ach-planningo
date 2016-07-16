@@ -1,0 +1,4 @@
+planningo_main_homepage:
+    path:     /hello
+    type:     rest
+    defaults: { _controller: PlanningoMainBundle:Default:index }

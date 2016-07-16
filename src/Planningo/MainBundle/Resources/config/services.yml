@@ -1,0 +1,12 @@
+services:
+    planningo.listener.user_creation:
+        class: Planningo\MainBundle\Listener\UserCreationListener
+        arguments: [@doctrine.orm.entity_manager]
+        tags:
+            - { name: kernel.event_subscriber }
+
+    planningo.listener.group_creation:
+        class: Planningo\MainBundle\Listener\GroupCreationListener
+        arguments: [@doctrine.orm.entity_manager]
+        tags:
+            - { name: kernel.event_subscriber }
